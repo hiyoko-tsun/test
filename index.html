@@ -3,17 +3,7 @@
 <head>
 	<title>Todo List</title>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script>
-		$(document).ready(function() {
-			$("#add-todo").click(function() {
-				var todo = $("#todo-input").val();
-				if (todo) {
-					$("#todo-list").append("<li>" + todo + "</li>");
-					$("#todo-input").val("");
-				}
-			});
-		});
-	</script>
+    <script src="app.js"></script>
 </head>
 <body>
 	<h1>Todo List</h1>
