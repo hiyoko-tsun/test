@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Todo List</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#add-todo").click(function() {
+				var todo = $("#todo-input").val();
+				if (todo) {
+					$("#todo-list").append("<li>" + todo + "</li>");
+					$("#todo-input").val("");
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1>Todo List</h1>
+	<label for="todo-input">Enter Todo:</label>
+	<input type="text" id="todo-input">
+	<button id="add-todo">Add Todo</button>
+	<ul id="todo-list"></ul>
+</body>
+</html>
